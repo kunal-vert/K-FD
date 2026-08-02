@@ -8,3 +8,7 @@
     font-family: font2;
     src: url("../public/Fonts/text-2.woff2");
 }
+
+/* html, body {
+  overflow-x: hidden;
+} */

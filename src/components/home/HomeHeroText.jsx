@@ -3,19 +3,19 @@ import Video from './Video'
 
 const HomeHeroText = () => {
   return (
-    <div className=' font-[text1] text-white pt-3.5 text-center'>
-      <div className='text-[9vw] leading-[8-vw] flex items-center justify-center'>
+    <div className=' font-[text-1] text-white pt-11 text-center'>
+      <div className='text-[9vw] leading-[8vw] flex items-center justify-center'>
         BUILT FOR THE
       </div>
-      <div className='text-[10vw] leading-[8-vw] flex items-center justify-center'>
+      <div className='text-[9vw] leading-[8vw] flex flex-wrap  items-center justify-center'>
         FUTURE
-        <div className=' h-[8vw] w-[17vw] rounded-full overflow-hidden  '>
-          <Video  />
+        <div className=' h-[9.7vw] w-[19vw] rounded-full  overflow-hidden shrink-0  '>
+          <Video />
         </div>
         NO ONE
       </div>
 
-      <div className='text-[10vw] leading-[8-vw]'>
+      <div className='text-[9vw] leading-[8vw]'>
         SEES
       </div>
     </div>
