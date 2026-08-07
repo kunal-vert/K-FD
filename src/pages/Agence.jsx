@@ -7,6 +7,7 @@ const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
   const imageDivRef = useRef(null)
   const imageref = useRef(null)
+  const imageref = useRef()
 
 
  
