@@ -9,7 +9,9 @@
     src: url("../public/Fonts/text-2.woff2");
 }
 
-/* html, body {
-  overflow-x: hidden;
-} */
+
+
+html, body {
+ background-color: black;
+}
  
