@@ -4,6 +4,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const ImagesArray = [
+  '/pic/pic-0.webp',
   '/pic/pic-1.png',
   '/pic/pic-2.png',
   '/pic/pic-3.png',
@@ -25,7 +26,7 @@ const Agence = () => {
         trigger: imageDivRef.current,
         markers: true,
         start: "top 28%",
-        end: "top -70%",
+        end: "top -50%",
         pin: true,
         onUpdate: (e) => {
           let ImageIndex;
