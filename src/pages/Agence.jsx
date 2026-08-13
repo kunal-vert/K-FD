@@ -12,6 +12,7 @@ const ImagesArray = [
   '/pic/pic-5.png',
   '/pic/pic-6.png',
   '/pic/pic-7.png',
+  '/pic/pic-8.webp'
 ];
 
 const Agence = () => {
@@ -50,7 +51,7 @@ const Agence = () => {
   return (
     <div>
       <div className='section1'>
-        <div ref={imageDivRef} className='w-[18vw] h-[23vw] rounded-2xl overflow-hidden absolute top-56 left-[30vw] '>
+        <div ref={imageDivRef} className='w-[19vw] h-[27vw] rounded-2xl overflow-hidden absolute top-56 left-[30vw] '>
           <img ref={imageref} className='h-full object-cover w-full ' src={ImagesArray[0]} alt="" />
         </div>
         <div className='font-[font2] relative'>
