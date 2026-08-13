@@ -18,6 +18,30 @@ const Agence = () => {
   const imageDivRef = useRef(null)
   const imageref = useRef(null)
 
+  useGSAP(function () {
+
+    gsap.to(imageDivRef.current, {
+      scrollTrigger: {
+        trigger: imageDivRef.current,
+        markers: true,
+        start: "top 28%",
+        end: "top -70%",
+        pin: true,
+        onUpdate: (e) => {
+          let ImageIndex;
+          if (e.progress < 1) {
+            ImageIndex = Math.floor(e.progress * ImagesArray.length)
+          }
+          else {
+            ImageIndex = ImagesArray.length - 1
+          }
+          imageref.current.src = ImagesArray[ImageIndex]
+        }
+      }
+    })
+
+
+  })
 
 
 
@@ -26,7 +50,7 @@ const Agence = () => {
     <div>
       <div className='section1'>
         <div ref={imageDivRef} className='w-[18vw] h-[23vw] rounded-2xl overflow-hidden absolute top-56 left-[30vw] '>
-          <img ref={imageref} className='h-full object-cover w-full ' src="https://www.orfonline.org/public/uploads/posts/image/65d5a5d6b48d4.png" alt="" />
+          <img ref={imageref} className='h-full object-cover w-full ' src={ImagesArray[0]} alt="" />
         </div>
         <div className='font-[font2] relative'>
           <div className='mt-[55vh]'>
